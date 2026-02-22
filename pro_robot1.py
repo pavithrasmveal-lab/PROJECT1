@@ -56,15 +56,13 @@ while(run):
     print("3) Rotate (left/right) ")
     print("4) Charge battery ")
     print("5) Report status ")
-    print("6")
-    print("7) Redo last command ")
     print("8) Exit")
     choice=int(input("Enter:"))
     if(choice==1):
         print("Initial x,y coordinate ,direction,battery") 
-        a=int(input("Enter x:"))
-        b=int(input("Enter y:")) 
-        c=input("Enter direction 'A':")
+        a=int(input("Enter x(width):"))
+        b=int(input("Enter y(height):")) 
+        c=input("Enter direction (in this format'A'):")
         d=int(input("Enter battery level:"))
         w1=World(a,b,c,d)
         
@@ -90,3 +88,4 @@ while(run):
         print("exit")
         run=False
                
+
